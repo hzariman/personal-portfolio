@@ -18,7 +18,7 @@ return (
 </nav>
 <div className="row banner">
 <div className="banner-text">
-<h1 className="responsive-headline">{resumeData.name}.</h1>
+<h1 className="responsive-headline">{resumeData.firstname} <span className = "nameSecond">{resumeData.lastname}</span>.</h1>
 <h2 style={{color:'#fff', fontFamily:'sans-serif '}}>I am interested in <span className="word"></span>
 </h2>
 <hr/>

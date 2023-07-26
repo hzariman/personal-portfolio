@@ -3,7 +3,7 @@
 /* Init JS
 /*
 -----------------------------------------------------------------------------------*/
-var words = ['Web Development.', 'Computer Architecture Synthesis.', 'Robotic Systems and Automation.'],
+var words = ['Web Development.', 'Computer Architecture and Chip Design.', 'Robotic Systems and Automation.'],
     part,
     i = 0,
     offset = 0,

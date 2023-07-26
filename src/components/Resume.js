@@ -105,10 +105,46 @@ return(
 })
 }
 </div>
-<div className="row work-title">
+<div className="row projects-title">
     <h1><span>Projects</span></h1>
 </div>
-<div className="row work"></div>
+<div className="row projects">
+    <div className="projects container">
+{
+resumeData.projects && resumeData.projects.map((item) => {
+return(
+    // <div className="row item">
+    // <h4>{item.ProjectName}</h4>
+    // <p className="info">
+    // <span className="date">{item.StartDate} - {item.EndDate}</span>
+    // </p>
+    // </div>
+    <div className="card">
+        <div className='face title' style={{ background: `linear-gradient(to bottom, rgba(66, 76, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%), url('${item.Image}'), #333`, backgroundSize: 'contain'}}>
+            <div className='row title header'>
+            <p><em className="cardDate">{item.StartDate}</em></p>
+            </div>
+            <div className='row title name'>
+            <h4>{item.ProjectName}</h4>
+            </div>
+            <div className='row title skill'>
+            {item.Skills.map((skill) => {
+            return(
+            <div className='skill-circle'>{skill}</div>
+            );
+            })}
+            </div>
+        </div>
+        <div className='face content'>
+            <p>{item.JD}.</p>
+            <div className='information'>
+                <p> Click <span className='hl'>here</span> for more... </p>
+            </div>
+        </div>
+    </div>
+)})}
+</div>
+</div>
 <div className="row skill">
 <div className="three columns header-col">
 <h1><span>Skills</span></h1>
@@ -137,3 +173,24 @@ return(
 );
 }
 }
+
+/* <div className="container">
+<div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a href="https://www.linkedin.com/in/adamdipinto/" target="_blank">_adamdipinto</a>
+                    </h3>
+                    <p>This is where I network and build my professional protfolio.</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div> */

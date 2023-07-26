@@ -1,6 +1,8 @@
 let resumeData = {
     "imagebaseurl":"https://ivy555.github.io/",
     "name": "Hariz Zariman",
+    "firstname": "Hariz",
+    "lastname": "Zariman",
     "role": "Full Satck Developer",
     "linkedinId":"Your ID",
     "skypeid": "Your skypeid",
@@ -49,7 +51,7 @@ let resumeData = {
     "CompanyName":"TritonAI, UC San Diego",
     "Location":"San Diego, California",
     "Image" : "images/TritonAI-Emblem.png",
-    "StartDate":"May 2022",
+    "StartDate":"May 2023",
     "EndDate":"Present",
     "BriefJD":"Working in university lab focused on artificial intelligence and robotics competitions.",
     "Tasks": ["Developing code to display light patterns representing status codes for scale model of autonomous vehicle.", "Designed and 3-D printed cases for electronic components (PDB) to be used in autonomous vehicle."],
@@ -68,6 +70,53 @@ let resumeData = {
     }
     ],
     "skillsDescription":"Your skills here",
+    "projects" : [
+        {
+        "ProjectName" : "Food Booking System Website",
+        "StartDate" : "February 2020",
+        "EndDate" : "End Date",
+        "Image" : "images/projects/klasseats.png",
+        "Tasks" : ["Did this", "and that", "and this..."],
+        "Skills" : ["Django", "Bootstrap", "SQL"],
+        "JD" : "Created a large-scale CRUD web application for high school, allowing students to pre order their food prior to recess and lunch breaks",
+        },
+        {
+        "ProjectName" : "Online Photoshop Website",
+        "StartDate" : "December 2022",
+        "EndDate" : "End Date",
+        "Image" : "images/UCSD-Emblem.png",
+        "Tasks" : ["Did this", "and that", "and this..."],
+        "Skills" : ["HTML", "CSS", "Javascript"],
+        "JD" : "Created a local-first online photoshop web application, allowing users to upload, edit, and download personal images for university coursework",
+        },
+        {
+        "ProjectName" : "Autonomous Model Car",
+        "StartDate" : "January 2023",
+        "EndDate" : "End Date",
+        "Image" : "images/UCSD-Emblem.png",
+        "Tasks" : ["Did this", "and that", "and this..."],
+        "Skills" : ["ROS2", "Computer Vision", "Embedded Linux", "Python"],
+        "JD" : "Designed prototypes for assembling a physical robot car, competed in self-driving races and implemented traffic light reaction and stop sign detection",
+        },
+        {
+        "ProjectName" : "SHA256/Bitcoin Hashing RTL Model",
+        "StartDate" : "May 2023",
+        "EndDate" : "End Date",
+        "Image" : "images/UCSD-Emblem.png",
+        "Tasks" : ["Did this", "and that", "and this..."],
+        "Skills" : ["SystemVerilog", "Quartus", "Modelsim", "Hardware Optimization"],
+        "JD" : "Designed ...",
+        },
+        {
+        "ProjectName" : "Personal Portfolio Website",
+        "StartDate" : "June 2023",
+        "EndDate" : "End Date",
+        "Image" : "images/UCSD-Emblem.png",
+        "Tasks" : ["Did this", "and that", "and this..."],
+        "Skills" : ["React.js", "HTML", "CSS"],
+        "JD" : "Made this website :)",
+        },
+    ],
     "skills":[
     {
     "skillname":"HTML5"

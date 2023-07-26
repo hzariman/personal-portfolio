@@ -1190,3 +1190,126 @@ footer .social-links li:first-child { margin-left: 0; }
 .columns.skills:last-child {
    float: left;
 }
+
+.row.projects {
+   padding: 0px;
+}
+
+span.nameSecond {
+   color: #00a0f0;
+}
+
+/*
+CARD CSS STUFF
+*/
+
+.projects.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.projects.container .card {
+   border-radius: 10px;
+   padding: 10px;
+   width: 33%;
+}
+
+.projects.container .card .face {
+   height: 200px;
+   transition: 0.5s;
+}
+
+.projects.container .card .face.title {
+   position: relative;
+    background: #333;
+    z-index: 1;
+    transform: translateY(100px);
+    text-align: center;
+}
+
+.projects.container .card .face.title .row.title.header{
+   width: 100%;
+   height: 20%;
+   margin: 0px;
+   display: flex;
+   justify-content: flex-end;
+   padding: 5px;
+
+}
+
+.projects.container .card .face.title .row.title.header .cardDate {
+   font: .75em 'opensans-regular', sans-serif;
+   margin-top: 6px;
+   color: white;
+
+}
+
+.projects.container .card .face.title .row.title.name {
+   width: 100%;
+   height: 40%;
+   margin: 0px;
+   text-align: center;
+}
+
+.projects.container .card .face.title .row.title.name h4{
+   color: white;
+}
+
+.projects.container .card .face.title .row.title.skill {
+   width: 100%;
+   margin: 0px;
+   height: 40%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.projects.container .card .face.title .row.title.skill .skill-circle {
+   border-radius: 25px;
+   min-width: 25%;
+   height: 35px;
+   padding: 0px 10px 10px 10px;
+   margin: 2.5px;
+   background: #00a0f03c;
+   border: 3px solid;
+   color: #00a0f0;
+   text-align: center;
+   font-size: 13px;
+}
+
+.projects.container .card:hover .face.title {
+   background: #00a0f0;
+    transform: translateY(0px);
+}
+
+.projects.container .card .face.content {
+   position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+    font-size: 95%;
+    padding-bottom: 5px;
+}
+
+.projects.container .card .face.content .information {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.projects.container .card .face.content .hl {
+   color: #00a0f0;
+}
+.projects.container .card:hover .face.content {
+   transform: translateY(0);
+}
+
+
