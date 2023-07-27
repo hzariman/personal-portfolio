@@ -109,7 +109,7 @@ return(
 <div className="row projects-title" id='projects'>
     <h1><span>Projects</span></h1>
 </div>
-<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ opacity: 1}}>
+<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
     <div className="projects container">
 {
 resumeData.projects && resumeData.projects.map((item, i) => {

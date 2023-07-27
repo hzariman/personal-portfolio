@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
+import { HashLink } from 'react-router-hash-link';
+
 
 // import { resumeData } from 'resumeData';
 
@@ -33,7 +35,7 @@ import { motion } from "framer-motion";
                 resumeData.projects && resumeData.projects.filter(project => project.CustomURL === id).map((project, i) => {
                     return (
                         <div className="row" key={i}>
-                        <h1><Link to='/#projects'>{project.ProjectName}</Link></h1>
+                        <h1><HashLink to='/#projects'>{project.ProjectName}</HashLink></h1>
                         <h3>{project.JD}</h3>
                         </div>
                     )
