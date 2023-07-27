@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { motion } from "framer-motion";
+
+import { Link } from 'react-router-dom';
 export default class Resume extends Component {
 render() {
 let resumeData = this.props.resumeData;
@@ -9,11 +12,11 @@ return (
     </div>
 <div className="row education">
 {
-resumeData.education && resumeData.education.map((item)=>{
+resumeData.education && resumeData.education.map((item, i)=>{
 return(
-<div className="row item">
+<div className="row item" key={i}>
 <div className="columns">
-<img src={`${item.Image}`} className="education-img"/> 
+<img src={`${item.Image}`} className="education-img" alt='images/UCSD-Emblem.png'/> 
 </div>
 <div className = "columns main">
 <div className="twelve rows">
@@ -46,11 +49,11 @@ return(
 
 <div className="row work">
 {
-resumeData.work && resumeData.work.map((item) => {
+resumeData.work && resumeData.work.map((item, i) => {
 return(
-<div className="row item">
+<div className="row item" key={i}>
 <div className="columns">
-<img src={`${item.Image}`} className="education-img"/> 
+<img src={`${item.Image}`} className="education-img" alt='images/UCSD-Emblem.png'/> 
 </div>
 <div className = "columns main">
 <div className="twelve rows">
@@ -63,19 +66,17 @@ return(
 <p>
 {item.BriefJD}
 </p>
-<p>
 <ul className="work-list">
-{item.Tasks.map((task) => {
+{item.Tasks.map((task, i) => {
 return(
-<li>{task}</li>
+<li key={i}>{task}</li>
 );
 })}
 </ul>
-</p>
 <div className="row skills">
-{item.Skills.map((skill) => {
+{item.Skills.map((skill, i) => {
 return(
-<div className='columns skills'>
+<div className='columns skills' key={i}>
 <div className='skill-circle'>{skill}</div>
 </div>
 );
@@ -105,13 +106,13 @@ return(
 })
 }
 </div>
-<div className="row projects-title">
+<div className="row projects-title" id='projects'>
     <h1><span>Projects</span></h1>
 </div>
-<div className="row projects">
+<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ opacity: 1}}>
     <div className="projects container">
 {
-resumeData.projects && resumeData.projects.map((item) => {
+resumeData.projects && resumeData.projects.map((item, i) => {
 return(
     // <div className="row item">
     // <h4>{item.ProjectName}</h4>
@@ -119,8 +120,8 @@ return(
     // <span className="date">{item.StartDate} - {item.EndDate}</span>
     // </p>
     // </div>
-    <div className="card">
-        <div className='face title' style={{ background: `linear-gradient(to bottom, rgba(66, 76, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%), url('${item.Image}'), #333`, backgroundSize: 'contain'}}>
+    <div className="card" key={i}>
+        <div className='face title' style={{ background: `linear-gradient(to bottom, rgba(66, 76, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%), url('${item.Image}'), #333`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
             <div className='row title header'>
             <p><em className="cardDate">{item.StartDate}</em></p>
             </div>
@@ -128,9 +129,9 @@ return(
             <h4>{item.ProjectName}</h4>
             </div>
             <div className='row title skill'>
-            {item.Skills.map((skill) => {
+            {item.Skills.map((skill, j) => {
             return(
-            <div className='skill-circle'>{skill}</div>
+            <div className='skill-circle' key={j}>{skill}</div>
             );
             })}
             </div>
@@ -138,13 +139,13 @@ return(
         <div className='face content'>
             <p>{item.JD}.</p>
             <div className='information'>
-                <p> Click <span className='hl'>here</span> for more... </p>
+                <p> Click <Link to={`/projects/${item.CustomURL}`}><span className='hl'>here</span></Link> for more... </p>
             </div>
         </div>
     </div>
 )})}
 </div>
-</div>
+</motion.div>
 <div className="row skill">
 <div className="three columns header-col">
 <h1><span>Skills</span></h1>
@@ -156,11 +157,11 @@ return(
 <div className="bars">
 <ul className="skills">
 {
-resumeData.skills && resumeData.skills.map((item) => {
+resumeData.skills && resumeData.skills.map((item, i) => {
 return(
-<li>
-{/* <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-</span><em>{item.skillname}</em> */}
+<li key={i}>
+<span className={`bar-expand ${item.skillname.toLowerCase()}`}>
+</span><em>{item.skillname}</em>
 </li>
 )
 })

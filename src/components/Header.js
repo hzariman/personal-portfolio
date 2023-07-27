@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 export default class Header extends Component {
 render() {
 let resumeData = this.props.resumeData;
 return (
 <React.Fragment>
-<header id="home">
+<motion.header id="home" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 2 }} exit={{ opacity: 0}}>
 <nav id="nav-wrap">
 <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
@@ -12,6 +13,7 @@ return (
 <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
 <li><a className="smoothscroll" href="#about">About</a></li>
 <li><a className="smoothscroll" href="#resume">Resume</a></li>
+<li><a className="smoothscroll" href="#projects">Projects</a></li>
 {/* <li><a className="smoothscroll" href="#portfolio">Works</a></li> */}
 <li><a className="smoothscroll" href="#contact">Contact</a></li>
 </ul>
@@ -46,7 +48,7 @@ return(
 <p className="scrolldown">
 <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
 </p>
-</header>
+</motion.header>
 </React.Fragment>
 );
 }

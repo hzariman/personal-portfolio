@@ -9,9 +9,9 @@ return (
 <h1>Check Out Some of My Works.</h1>
 <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf" alt="">
 {
-resumeData.portfolio && resumeData.portfolio.map((item)=>{
+resumeData.portfolio && resumeData.portfolio.map((item, i)=>{
 return(
-<div className="columns portfolio-item">
+<div className="columns portfolio-item" key={i}>
 <div className="item-wrap">
 <a href="#modal-01">
 <img src={`${item.imgurl}`} className="item-img"/>

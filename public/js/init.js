@@ -163,7 +163,10 @@ var wordflick = function () {
 		var header = $('header').height();
       var about = $('section#about').outerHeight() + header;
       var resume = $('section#resume').outerHeight() + about;
-      var portfolio = $('section#portfolio').outerHeight() + resume;
+      var education = $('div.row.education').outerHeight() + about;
+      var work = $('div.row.work').outerHeight() + education;
+      var projects = $('div.row.projects-title').outerHeight() + work;
+      var portfolio = $('section#portfolio').outerHeight() + projects;
       var contact = $('section#contact').outerHeight() + portfolio; 
 
 		var y = $(window).scrollTop();
@@ -205,17 +208,15 @@ var wordflick = function () {
             $("#nav-wrap a[href='#about']").parent().addClass("current");
             break;
 
-         case (y >= about) && (y < resume):
+         case (y >= about) && (y < projects):
             navigation_links.parent().removeClass("current");
             $("#nav-wrap a[href='#resume']").parent().addClass("current");
             break;
          
-         case (y >= resume) && (y < portfolio):
-            break;
-         
-         case (y >= portfolio) && (y < contact):
+
+         case (y >= work) && (y < resume):
             navigation_links.parent().removeClass("current");
-            $("#nav-wrap a[href='#portfolio']").parent().addClass("current");
+            $("#nav-wrap a[href='#projects']").parent().addClass("current");
             break;
          
          default:

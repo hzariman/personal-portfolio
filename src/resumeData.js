@@ -10,12 +10,12 @@ let resumeData = {
     "socialLinks":[
     {
     "name":"linkedin",
-    "url":"https://www.linkedin.com/in/dilip-safi-438322a3/",
+    "url":"https://www.linkedin.com/in/hzariman/",
     "className":"fa fa-linkedin"
     },
     {
     "name":"github",
-    "url":"http://github.com/ivy555",
+    "url":"http://github.com/hzariman",
     "className":"fa fa-github"
     }
     ],
@@ -79,15 +79,17 @@ let resumeData = {
         "Tasks" : ["Did this", "and that", "and this..."],
         "Skills" : ["Django", "Bootstrap", "SQL"],
         "JD" : "Created a large-scale CRUD web application for high school, allowing students to pre order their food prior to recess and lunch breaks",
+        "CustomURL": "klasseats",
         },
         {
         "ProjectName" : "Online Photoshop Website",
         "StartDate" : "December 2022",
         "EndDate" : "End Date",
-        "Image" : "images/UCSD-Emblem.png",
+        "Image" : "images/projects/photoshop.png",
         "Tasks" : ["Did this", "and that", "and this..."],
         "Skills" : ["HTML", "CSS", "Javascript"],
         "JD" : "Created a local-first online photoshop web application, allowing users to upload, edit, and download personal images for university coursework",
+        "CustomURL": "online-photoshop",
         },
         {
         "ProjectName" : "Autonomous Model Car",
@@ -97,6 +99,7 @@ let resumeData = {
         "Tasks" : ["Did this", "and that", "and this..."],
         "Skills" : ["ROS2", "Computer Vision", "Embedded Linux", "Python"],
         "JD" : "Designed prototypes for assembling a physical robot car, competed in self-driving races and implemented traffic light reaction and stop sign detection",
+        "CustomURL": "autonomous-car",
         },
         {
         "ProjectName" : "SHA256/Bitcoin Hashing RTL Model",
@@ -106,6 +109,7 @@ let resumeData = {
         "Tasks" : ["Did this", "and that", "and this..."],
         "Skills" : ["SystemVerilog", "Quartus", "Modelsim", "Hardware Optimization"],
         "JD" : "Designed ...",
+        "CustomURL": "sha256-bitcoin-hasher",
         },
         {
         "ProjectName" : "Personal Portfolio Website",
@@ -115,6 +119,7 @@ let resumeData = {
         "Tasks" : ["Did this", "and that", "and this..."],
         "Skills" : ["React.js", "HTML", "CSS"],
         "JD" : "Made this website :)",
+        "CustomURL": "/",
         },
     ],
     "skills":[

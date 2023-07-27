@@ -7,17 +7,31 @@ import ContactUs from './components/Contact';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
 
+import { Route, Routes } from 'react-router-dom';
+import { Projects } from './components/Projects';
+import { AnimatePresence } from 'framer-motion';
+
+
 class App extends Component {
 render() {
 return (
-  <div className="App">
-    <Header resumeData={resumeData}/>
-    <About resumeData={resumeData}/>
-    <Resume resumeData={resumeData}/>
-    <Portfolio resumeData={resumeData}/>
-    <ContactUs resumeData={resumeData}/>
-    <Footer resumeData={resumeData}/>
-  </div>
+  <AnimatePresence>
+    <Routes key={window.location.pathname}> 
+    <Route path="/" element={
+      <div className="App">
+      <Header resumeData={resumeData}/>
+      <About resumeData={resumeData}/>
+      <Resume resumeData={resumeData}/>
+      <Portfolio resumeData={resumeData}/>
+      <ContactUs resumeData={resumeData}/>
+      <Footer resumeData={resumeData}/>
+    </div>
+    }/>
+    <Route path="/test" element={<Header resumeData={resumeData}/>}/>
+    <Route path="/Projects/:id" element={<Projects resumeData={resumeData}/>}/>
+    </Routes>
+  </AnimatePresence>
+
 );
 }
 }
