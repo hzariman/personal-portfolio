@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { HashLink } from 'react-router-hash-link';
 
@@ -29,8 +29,16 @@ import { HashLink } from 'react-router-hash-link';
         let { id } = useParams();
         let resumeData = props.resumeData;
         return (
-            <motion.section className='project section' initial={{ x : "100%"}} animate={{ x: "0%"}} transition={{ duration: 1 }} exit={{ opacity: 1}}>
-            <div className="row" >
+            <motion.section className='project section' initial={{ y : "100%"}} animate={{ y: "0%"}} transition={{ duration: 1 }} exit={{ x: 300, opacity: 0 }}>
+                <HashLink to='/#projects'>
+                <div className="arrowCol">
+                <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                </div>
+                </HashLink>
             {
                 resumeData.projects && resumeData.projects.filter(project => project.CustomURL === id).map((project, i) => {
                     return (
@@ -41,7 +49,6 @@ import { HashLink } from 'react-router-hash-link';
                     )
                 })
             }
-            </div>
             </motion.section>
         );
     }

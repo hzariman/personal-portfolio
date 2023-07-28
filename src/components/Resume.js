@@ -106,10 +106,10 @@ return(
 })
 }
 </div>
-<div className="row projects-title" id='projects'>
+<motion.div className="row projects-title" id='projects' initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
     <h1><span>Projects</span></h1>
-</div>
-<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
+</motion.div>
+<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
     <div className="projects container">
 {
 resumeData.projects && resumeData.projects.map((item, i) => {
@@ -139,7 +139,7 @@ return(
         <div className='face content'>
             <p>{item.JD}.</p>
             <div className='information'>
-                <p> Click <Link to={`/projects/${item.CustomURL}`}><span className='hl'>here</span></Link> for more... </p>
+                <p> Click <Link to={`/projects/${item.CustomURL}`}><span className='hl'>here</span></Link> for more...</p>
             </div>
         </div>
     </div>
