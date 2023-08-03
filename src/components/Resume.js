@@ -14,7 +14,7 @@ return (
 {
 resumeData.education && resumeData.education.map((item, i)=>{
 return(
-<div className="row item" key={i}>
+<div className="row item hidden" key={i}>
 <div className="columns">
 <img src={`${item.Image}`} className="education-img" alt='images/UCSD-Emblem.png'/> 
 </div>
@@ -51,7 +51,7 @@ return(
 {
 resumeData.work && resumeData.work.map((item, i) => {
 return(
-<div className="row item" key={i}>
+<div className="row item hidden" key={i}>
 <div className="columns">
 <img src={`${item.Image}`} className="education-img" alt='images/UCSD-Emblem.png'/> 
 </div>
@@ -106,10 +106,10 @@ return(
 })
 }
 </div>
-<motion.div className="row projects-title" id='projects' initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
+<motion.div className="row projects-title" id='projects' initial={{ y : "-100%", opacity: 0}} animate={{ y: "0%", opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ y: 200, opacity: 0 }}>
     <h1><span>Projects</span></h1>
 </motion.div>
-<motion.div className="row projects" initial={{ opacity : 0}} animate={{ opacity: 1}} transition={{ duration: 0.6 , ease: "easeOut"}} exit={{ x: -300, opacity: 0 }}>
+<motion.div className="row projects" initial={{ y : "-100%", opacity: 0}} animate={{ y: "0%", opacity: 1}} transition={{ duration: 1 , ease: "easeOut"}} exit={{ y: 200, opacity: 0 }}>
     <div className="projects container">
 {
 resumeData.projects && resumeData.projects.map((item, i) => {

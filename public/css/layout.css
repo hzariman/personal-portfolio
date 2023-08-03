@@ -1137,6 +1137,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
 
 .come-in {
+   opacity: 1;
    transform: translateX(100vw);
    animation: come-in 2s ease forwards;
  }
@@ -1316,19 +1317,21 @@ CARD CSS STUFF
 }
 
 .project.section {
-   width: 100vw;
-   height: 100vh;
-   display: flex;
+   background: url(../images/bg-common.jpg);
+   background-size: 100vw 85vh;
+   
 
 }
 
 .project.section .arrowCol {
-   width: 100px;
-   height: 100%;
-   margin-right: 0px;
+   width: 100%;
+   height: 15vh;
+   bottom: 0px;
    background-color: #838C95;
    transition: 0.6s;
+   overflow: hidden;
    position: sticky;
+   
 }
 
 .project.section .arrowCol:hover {
@@ -1336,12 +1339,13 @@ CARD CSS STUFF
 }
 
 .arrow {
-   position: sticky;
-   top: 50%;
+   position: absolute;
+   top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
-   transform: rotate(90deg);
+   transform: rotate(360deg);
    cursor: pointer;
+   z-index: 20;
 }
 
 .arrow span {
@@ -1378,3 +1382,34 @@ CARD CSS STUFF
        transform: rotate(45deg) translate(20px, 20px);
    }
 }
+
+.row.item.hidden {
+   opacity: 0;
+}
+
+.project-cover {
+   width: 100%;
+   padding-top: 5%;
+}
+
+.row.cover {
+   height: 85vh;
+}
+
+.row.overview-title {
+   margin-bottom: 10px;
+}
+
+.row.overview {
+   display: flex;
+}
+
+.project-overview-image {
+   width: 50%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+
+
