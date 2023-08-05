@@ -35,11 +35,15 @@ import { HashLink } from 'react-router-hash-link';
             {
                 resumeData.projects && resumeData.projects.filter(project => project.CustomURL === id).map((project, i) => {
                     return (
-                        <div>
-                        <div className="row cover" key={i}>
+                        <div key={i}>
+                        <div className="row cover">
                         <motion.h1 animate={{ y:0, opacity:1 }} initial={{y: "100%", opacity: 0}} transition={{ delay: 1.5, duration: 0.5}}><HashLink to='/#projects'>{project.ProjectName}</HashLink></motion.h1>
-                        <h4>{project.JD}</h4>
+                        <div className='project-JD'><h5>{project.JD}</h5></div>
                         <motion.img src={`../${project.ProjectCover}`} className="project-cover" alt='../images/UCSD-Emblem.png' animate={{ y:0, opacity:1 }} initial={{y: "100%", opacity: 0}} transition={{ delay: 1.5, duration: 1}}/> 
+                        <ul className='project-links'>
+                            <li> <a href='#'><i className='fa fa-github'></i></a></li>
+                            <li><a href='#'><i className='fa fa-linkedin'></i></a></li>
+                        </ul>
 
                         </div>
                         <div className="row overview-title">

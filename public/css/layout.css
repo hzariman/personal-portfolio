@@ -1181,6 +1181,7 @@ footer .social-links li:first-child { margin-left: 0; }
    border: 3px solid #ffffff;
    color: #00a0f0;
    text-align: center;
+   margin: 0px;
  }
  
 .columns.skills {
@@ -1387,17 +1388,42 @@ CARD CSS STUFF
    opacity: 0;
 }
 
-.project-cover {
-   width: 100%;
-   padding-top: 5%;
-}
-
 .row.cover {
    height: 85vh;
 }
 
+.row.cover h1 {
+   height: 5%;
+}
+
+.row.cover .project-JD {
+   height: 10%;
+}
+
+.project-cover {
+   display: block;
+   height: 75%;
+   padding-top: 2.5%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.project-links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   margin-top: 0px;
+   height: 10%;
+}
+
+.project-links li {
+   margin: 0px 15px 0px 15px;
+}
+
 .row.overview-title {
    margin-bottom: 10px;
+   margin-top: 40px;
 }
 
 .row.overview {
@@ -1410,6 +1436,11 @@ CARD CSS STUFF
    background-position: center;
    background-repeat: no-repeat;
 }
+
+
+
+
+
 
 
 
