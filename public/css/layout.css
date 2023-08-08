@@ -1320,6 +1320,7 @@ CARD CSS STUFF
 .project.section {
    background: url(../images/bg-common.jpg);
    background-size: 100vw 85vh;
+   background-repeat: no-repeat;
    
 
 }
@@ -1393,11 +1394,11 @@ CARD CSS STUFF
 }
 
 .row.cover h1 {
-   height: 5%;
+   min-height: 5%;
 }
 
 .row.cover .project-JD {
-   height: 10%;
+   min-height: 10%;
 }
 
 .project-cover {
@@ -1428,10 +1429,16 @@ CARD CSS STUFF
 
 .row.overview {
    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.row.overview p {
+   width: 50%;
 }
 
 .project-overview-image {
-   width: 50%;
+   width: 500px;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
