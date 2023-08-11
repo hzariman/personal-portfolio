@@ -83,6 +83,20 @@ let resumeData = {
         "ProjectCover": "images/mockup/klasseats-mockup.png",
         "ProjectOverview": "KlassEats is my first web development project which creates a system (using HTML/CSS and the Django framework) that aims to allow students within my high-school to pre-order their meals ahead of time. It contains separate user interfaces for the Admin, Staff and Student user roles which contain their respective actions. ",
         "ProjectOverviewImage": "images/mockup/klasseats-browser1.png",
+        "AdditionalInfo" : [
+            {
+                "ProjectOverview" : "KlassEats is my first web development project which creates a system (using HTML/CSS and the Django framework) that aims to allow students within my high-school to pre-order their meals ahead of time. It contains separate user interfaces for the Admin, Staff and Student user roles which contain their respective actions. ",
+                "ProjectOverviewImage": "images/mockup/klasseats-browser1.png",
+            },
+            {
+                "ProjectOverview" : "KlassEats is my first web development project which creates a system (using HTML/CSS and the Django framework) that aims to allow students within my high-school to pre-order their meals ahead of time. It contains separate user interfaces for the Admin, Staff and Student user roles which contain their respective actions. ",
+                "ProjectOverviewImage": "images/mockup/klasseats-browser1.png",
+            },
+            {
+                "ProjectOverview" : "KlassEats is my first web development project which creates a system (using HTML/CSS and the Django framework) that aims to allow students within my high-school to pre-order their meals ahead of time. It contains separate user interfaces for the Admin, Staff and Student user roles which contain their respective actions. ",
+                "ProjectOverviewImage": "images/mockup/klasseats-browser1.png",
+            },
+        ],
         },
         {
         "ProjectName" : "Online Photoshop Website",

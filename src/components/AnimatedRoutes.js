@@ -17,7 +17,6 @@ function AnimatedRoutes(props) {
   return (
     <AnimatePresence mode="wait">
     <Routes location={location} key={location.pathname}>
-        console.log(location.pathname);
     <Route path="/" element={
       <div className="App">
       <Header resumeData={resumeData}/>

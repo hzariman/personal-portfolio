@@ -1431,6 +1431,11 @@ CARD CSS STUFF
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
+   margin-bottom: 20px;
+}
+
+.row.overview:nth-child(odd) {
+   flex-direction: row-reverse;
 }
 
 .row.overview p {

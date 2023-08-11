@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { HashLink } from 'react-router-hash-link';
+import ScrollToTop from "./ScrollToTop";
 
 
 // import { resumeData } from 'resumeData';
@@ -31,7 +32,7 @@ import { HashLink } from 'react-router-hash-link';
         let { id } = useParams();
         let resumeData = props.resumeData;
         return (
-            <motion.section className='project section' initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 1 }} exit={{ y: 300, opacity: 0 }}>
+            <motion.section className='project section' id='title' initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 1 }} exit={{ y: 300, opacity: 0 }}>
             {
                 resumeData.projects && resumeData.projects.filter(project => project.CustomURL === id).map((project, i) => {
                     return (
@@ -49,10 +50,18 @@ import { HashLink } from 'react-router-hash-link';
                         <div className="row overview-title">
                             <h2>Project Overview</h2>
                         </div>
-                        <div className="row overview">
-                            <p>{project.ProjectOverview}</p>
-                            <img src={`../${project.ProjectOverviewImage}`} className="project-overview-image" alt='../images/UCSD-Emblem.png'/>
-                        </div>
+                        {
+                            project.AdditionalInfo && project.AdditionalInfo.map((info, i) => {
+                            return (
+                                <div className="row overview">
+                                <p>{info.ProjectOverview}</p>
+                                <img src={`../${info.ProjectOverviewImage}`} className="project-overview-image" alt='../images/UCSD-Emblem.png'/>
+                            </div>
+                            )})
+                            
+                        }
+
+                        
                         
                         </div>
                     )
@@ -67,6 +76,7 @@ import { HashLink } from 'react-router-hash-link';
                 </div>
                 </motion.div>
                 </HashLink>
+            <ScrollToTop />
             </motion.section>
         );
     }
