@@ -4,7 +4,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Header from './Header';
 import About from './About';
 import Resume from './Resume';
-import Portfolio from './Portfolio';
 import ContactUs from './Contact';
 import Footer from './Footer';
 import { Projects } from './Projects';
@@ -22,7 +21,6 @@ function AnimatedRoutes(props) {
       <Header resumeData={resumeData}/>
       <About resumeData={resumeData}/>
       <Resume resumeData={resumeData}/>
-      <Portfolio resumeData={resumeData}/>
       <ContactUs resumeData={resumeData}/>
       <Footer resumeData={resumeData}/>
     </div>
