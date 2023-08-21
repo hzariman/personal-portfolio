@@ -73,7 +73,7 @@ return(
 );
 })}
 </ul>
-<div className="row skills">
+<div className="container skills">
 {item.Skills.map((skill, i) => {
 return(
 <div className='columns skills' key={i}>

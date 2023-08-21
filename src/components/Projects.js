@@ -43,7 +43,7 @@ import ScrollToTop from "./ScrollToTop";
                         <motion.img src={`../${project.ProjectCover}`} className="project-cover" alt='../images/UCSD-Emblem.png' animate={{ y:0, opacity:1 }} initial={{y: "100%", opacity: 0}} transition={{ delay: 1.5, duration: 1}}/> 
                         <ul className='project-links'>
                             <li> <a href='#'><i className='fa fa-github'></i></a></li>
-                            <li><a href='#'><i className='fa fa-linkedin'></i></a></li>
+                            <li><a href='#'><i className='fa fa-file-text'></i></a></li>
                         </ul>
 
                         </div>
