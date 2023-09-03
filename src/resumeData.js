@@ -3,7 +3,7 @@ let resumeData = {
     "name": "Hariz Zariman",
     "firstname": "Hariz",
     "lastname": "Zariman",
-    "role": "Full Satck Developer",
+    "role": "Full Stack Developer",
     "linkedinId":"Your ID",
     "skypeid": "Your skypeid",
     "roleDescription": "I like to learn and create applications in various parts of software development and like to learn about new technologies, write technical articles or simply play games in my free time.",
@@ -69,7 +69,7 @@ let resumeData = {
     "Skills": ["Flask", "Angular", "HTML", "CSS", "SQL"],
     }
     ],
-    "skillsDescription":"Your skills here",
+    "skillsDescription":"",
     "projects" : [
         {
         "ProjectName" : "Food Booking System Website",

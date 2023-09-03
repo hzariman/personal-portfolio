@@ -139,7 +139,8 @@ return(
         <div className='face content'>
             <p>{item.JD}.</p>
             <div className='information'>
-                <p> Click <Link to={`/projects/${item.CustomURL}`}><span className='hl'>here</span></Link> for more...</p>
+                {/* <p> Click <Link to={`/projects/${item.CustomURL}`}><span className='hl'>here</span></Link> for more...</p> */}
+                <p> More info to be added...</p>
             </div>
         </div>
     </div>
