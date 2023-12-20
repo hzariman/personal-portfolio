@@ -121,7 +121,7 @@ return(
     // </p>
     // </div>
     <div className="card" key={i}>
-        <div className='face title' style={{ background: `linear-gradient(to bottom, rgba(66, 76, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%), url('${item.Image}'), #333`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
+        <div className='face title' style={{ background: `linear-gradient(to bottom, rgba(66, 76, 92, 0.8) 0%, rgba(66, 76, 92, 0.8) 100%), url('${item.Image}'), #333`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className='row title header'>
             <p><em className="cardDate">{item.StartDate}</em></p>
             </div>

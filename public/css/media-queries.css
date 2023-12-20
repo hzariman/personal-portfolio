@@ -287,6 +287,17 @@
    #portfolio-wrapper .columns { margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
 
+   /* Cards Section
+   /* ----------------------------------------------------------------- */
+
+   #projects.row.projects-title {
+      text-align: center;
+   }
+   .projects.container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
