@@ -20,7 +20,8 @@ let resumeData = {
     }
     ],
     "aboutme":"I am currently a fourth-year student studying at UC San Diego pursing a bachelor's degree in Computer Engineering. I have experience in full stack web development, electronic system synthesis and robotics.",
-    "aboutme2" :"In my free time, I enjoy playing golf, skiing and binge watching Netflix!", 
+    "aboutme2" :"In my free time, I enjoy playing golf, skiing and binge watching Netflix!",
+    "pfp": "images/profile.jpg", 
     "address":"San Diego, CA",
     "website":"https://harizzariman.com/",
     "education":[

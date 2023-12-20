@@ -6,7 +6,7 @@ return (
     <section id="about">
         <div className="row about">
             <div className="three columns">
-                <img className="profile-pic" src="images/profile.jpg" alt="" />
+                <img className="profile-pic" src={resumeData.pfp} alt="" />
             </div>
             <div className="nine columns main-col">
                 <h2>About Me</h2>
