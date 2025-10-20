@@ -208,10 +208,14 @@ ul#nav li a:hover { color: #00a0f0; }
 }
 #about .profile-pic {
    position: relative;
-   aspect-ratio: auto;
-   height: 100%;
-   border: solid 3px white;
-   border-radius: 3px;
+   display: block;
+   width: 190px; /* slightly larger for better clarity */
+   height: 190px;
+   object-fit: cover; /* crop to fill */
+   border: 2px solid rgba(255,255,255,0.75); /* thinner, softer border */
+   border-radius: 50%; /* make circular */
+   overflow: hidden;
+   box-shadow: 0 6px 18px rgba(0,0,0,0.25); /* subtle depth */
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
