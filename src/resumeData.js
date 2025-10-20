@@ -19,9 +19,10 @@ let resumeData = {
     "className":"fa fa-github"
     }
     ],
-    "aboutme":"I am currently a fourth-year student studying at UC San Diego pursing a bachelor's degree in Computer Engineering. I have experience in full stack web development, electronic system synthesis and robotics.",
+    "aboutme":"I am currently working as a Software Engineer at Google. I recently graduated from the University of California, San Diego with a B.S. in Computer Engineering. I have experience in full‑stack web development, electronic system synthesis, and robotics.",
     "aboutme2" :"In my free time, I enjoy playing golf, skiing and binge watching Netflix!",
-    "pfp": "images/profile.jpg", 
+    "pfp": "/images/profile_clean.jpg",
+    "pfp2x": "/images/profile_clean@2x.jpg",
     "address":"San Diego, CA",
     "website":"https://harizzariman.com/",
     "education":[
@@ -48,15 +49,15 @@ let resumeData = {
     ],
     "work":[
     {
-    "JobTitle": "Embedded Systems Developer",
-    "CompanyName":"TritonAI, UC San Diego",
-    "Location":"San Diego, California",
-    "Image" : "images/TritonAI-Emblem.png",
-    "StartDate":"May 2023",
+    "JobTitle": "Software Engineer",
+    "CompanyName":"Google",
+    "Location":"Mountain View, California",
+    "Image" : "images/google-icon.png",
+    "StartDate":"January 2025",
     "EndDate":"Present",
-    "BriefJD":"Working in university lab focused on artificial intelligence and robotics competitions.",
-    "Tasks": ["Developing code to display light patterns representing status codes for scale model of autonomous vehicle.", "Designed and 3-D printed cases for electronic components (PDB) to be used in autonomous vehicle."],
-    "Skills": ["C++", "Python", "Arduino", "3D-Printing"],
+    "BriefJD":"Working in Search Evaluation.",
+    "Tasks" : [],
+    "Skills": ["Java", "Javascript", "Typescript"],
     },
     {
     "JobTitle": "Software Engineering Intern",

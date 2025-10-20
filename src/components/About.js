@@ -6,7 +6,14 @@ return (
     <section id="about">
         <div className="row about">
             <div className="three columns">
-                <img className="profile-pic" src={resumeData.pfp} alt="" />
+                <img
+                    className="profile-pic"
+                    src={resumeData.pfp}
+                    srcSet={`${resumeData.pfp2x} 2x`}
+                    alt={`${resumeData.firstname} ${resumeData.lastname}`}
+                    loading="lazy"
+                    decoding="async"
+                />
             </div>
             <div className="nine columns main-col">
                 <h2>About Me</h2>

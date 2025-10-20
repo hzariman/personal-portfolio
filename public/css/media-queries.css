@@ -50,9 +50,14 @@
    /* About Section
    ------------------------------------------------------------------- */
    #about .profile-pic {
-      width: 114px;
-      height: 114px;
+      width: 140px;
+      height: 140px;
       margin-left: 12px;
+      border-radius: 50%;
+      object-fit: cover;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.75);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
    }
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
@@ -215,6 +220,7 @@
 
    /* About Section
    -------------------------------------------------------------------- */
+   /* hide profile pic on small mobile to preserve space */
    #about .profile-pic { display: none; }
    #about .download .button {
       width: 100%;
@@ -413,10 +419,19 @@
 
 }
 
+/* Date fix */
+@media only screen and (max-width: 990px) {
+
+   .columns.date {
+      display: none;
+   }
+
+   .mobile-date {
+      display: inline-block;
+   }
 
 
-
-
+}
 
 
 
